@@ -930,42 +930,12 @@
             color: var(--color-accent);
         }
 
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            padding: 16px;
+        .contact-cta {
+            padding: 48px;
             background: var(--color-bg);
             border: 1px solid var(--color-border);
-            border-radius: var(--radius-sm);
-            color: var(--color-text);
-            font-family: var(--font-display);
-            font-size: 15px;
-            transition: border-color 0.2s;
-        }
-
-        .contact-form input:focus,
-        .contact-form textarea:focus {
-            outline: none;
-            border-color: var(--color-accent);
-        }
-
-        .contact-form input::placeholder,
-        .contact-form textarea::placeholder {
-            color: var(--color-text-tertiary);
-        }
-
-        .contact-form textarea {
-            min-height: 140px;
-            resize: vertical;
-        }
-
-        .contact-form button {
-            align-self: flex-start;
+            border-radius: var(--radius-md);
+            text-align: center;
         }
 
         /* Footer */
@@ -1508,12 +1478,13 @@
                         </a>
                     </div>
                 </div>
-                <form class="contact-form" action="https://formspree.io/f/placeholder" method="POST">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <textarea name="message" placeholder="Message" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                <div class="contact-cta">
+                    <h3 style="color: var(--color-text); margin-bottom: 16px;">Ready to connect?</h3>
+                    <p style="color: var(--color-text-secondary); margin-bottom: 32px;">Send me an email and I'll get back to you within 24 hours.</p>
+                    <a href="mailto:livingframeworkai@gmail.com?subject=Inquiry about Living Framework" class="btn btn-primary" style="display: inline-flex;">
+                        Email Me →
+                    </a>
+                </div>
             </div>
         </div>
     </section>
